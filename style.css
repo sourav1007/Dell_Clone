@@ -1184,6 +1184,7 @@ footer button {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: #282577;
 
 
 }
@@ -1374,22 +1375,31 @@ form input {
     /* __FORM SETINTERVAL */
     .form {
         width: 80%;
-        margin-top: 2rem;
+        
+        padding: 0rem;
+        margin-top: 7rem;
 
+    }
+    .form-header{
+        width: 75%;
     }
 
     .form-header i {
-
-        margin-left: 15rem;
+        top: 2px;
+        right: 4px;
         font-size: 1.2rem;
+       
 
     }
-
-    .form {
-        padding: 0rem;
-        margin-top: 7rem;
+    .form button{
+        padding: 0.5rem;
     }
+    .form-header h2{
+        color: #282577;
+    }
+    
 
+ 
     form input {
         width: 90%;
         margin: auto;
@@ -1539,6 +1549,9 @@ form input {
         margin-left: 15rem;
         font-size: 1.2rem;
 
+    }
+    .form-header h2{
+        color: #282577;
     }
 
     .form {
