@@ -32,7 +32,7 @@ if (cross) {
 
 let cards = document.querySelectorAll(".cards");
 let heart = document.querySelectorAll(".heart")
-let wishlist=document.querySelector(".wishlist")
+let wishlist = document.querySelector(".wishlist")
 // function like(a) {
 
 //     heart[a].classList.toggle("red");
@@ -41,7 +41,7 @@ let wishlist=document.querySelector(".wishlist")
 for (let i = 0; i < cards.length; i++) {
     heart[i].addEventListener("click", () => {
         heart[i].classList.toggle("red");
-      
+
 
 
     })
@@ -61,7 +61,7 @@ function show(e) {
 //     if(num<53) {
 //         document.querySelector(".number").innerHTML = ++num;
 //     }
-    
+
 // },10)
 
 
@@ -75,10 +75,50 @@ setTimeout(()=>{
 
 },2000)
 
-function closeform(){
+function closeform() {
     formbackdrop.classList.remove("form-backdropshow")
     body.classList.remove("scroll")
-     
+
 }
+
+// _____COUNTER CARDS_____
+
+let number = document.querySelectorAll(".number");
+let arr = [];
+for (var i = 0; i < number.length; i++) {
+    arr.push(Number(number[i].innerHTML));
+}
+
+for (let i = 0; i < arr.length; i++) {
+    let num = 0;
+    let time = setInterval(counter, 50);
+    function counter() {
+        if (num < arr[i]) {
+            if (arr[i] > 50) {
+                num = num + 5;
+                if (num > arr[i]) {
+                    num = arr[i];
+                }
+                number[i].innerHTML = `${num}+`;
+            }
+            else {
+                num++;
+                number[i].innerHTML = `${num}+`;
+            }
+        }
+        else {
+            clearInterval(time);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
 
 

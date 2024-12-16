@@ -928,6 +928,7 @@ header .search2 {
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: #1D2C3B;
+   
 
 
 }
@@ -947,6 +948,7 @@ header .search2 {
     width: 300px;
     margin: 50px 0;
     box-shadow: -4px 7px 10px 0px black;
+   
 }
 
 .counter-cards .card h1 {
@@ -1110,11 +1112,11 @@ footer button {
     text-align: center;
     padding: 1rem;
     border-radius: 15px;
-    background-color: white;
     margin-top: 5rem;
     color: black;
     background-color: #FFFFFF;
     position: relative;
+ 
 
 
 }
@@ -1131,6 +1133,7 @@ footer button {
     top: 0;
     top: 750px;
     transition: 0.5s;
+   
 }
 
 .form-backdropshow {
@@ -1220,6 +1223,7 @@ form input {
     outline: none;
     border: none;
 }
+
 
 
 /* ___________________________________________MEDIA QUERIES___________________________________________________ */
